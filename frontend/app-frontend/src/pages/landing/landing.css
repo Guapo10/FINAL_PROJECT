@@ -1,0 +1,133 @@
+/* LandingPage.css */
+.landing-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+  
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+  }
+  
+  
+  .content {
+    text-align: center;
+    color: #7fffD4;
+    font-size: xx-large;
+  }
+
+  .content span{
+    color: greenyellow;
+    text-align: center;
+    font-size: 4rem;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+.sign-up-button{
+text-decoration: none;
+}
+  
+
+.sign-up-button {
+    margin-top: 20px; /* Add space between paragraph and button */
+    text-align: center; /* Center the button horizontally */
+  }
+  .sign-up-button button {
+    background-color: #111111;
+    color: white; /* Text color */
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  
+  /* Hover effect */
+  .sign-up-button button:hover {
+    background-color: #4CAF50; /* Change to a different color on hover */
+  }
+.key-features{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px;
+  
+}
+.card-section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:-10px; 
+}
+
+
+  .feature-card {
+    flex-basis: calc(33.33% - 20px);
+   max-width: calc(33.33% - 20px);
+   width: 100%;
+   background: rgb(214, 214, 214);
+   border-radius: 10px;
+   padding: 0px;
+   margin-bottom: 20px;
+   transition: .3s;
+   border-radius: 2px solid transparent;
+
+  }
+  .feature-card:hover{
+    border-color: greenyellow;
+  }
+  
+  .feature-card:hover {
+ 
+    transform: translateY(-5px); /* Add a slight hover effect */
+    box-shadow: 0px 6px 12px rgba(23, 241, 96, 0.1);
+  }
+  
+  .feature-card h3 {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+    color: #180f0f;
+  }
+  
+    

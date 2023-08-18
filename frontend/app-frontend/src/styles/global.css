@@ -19,8 +19,8 @@ a {
   display: flex;
 }
 .menuContainer{
-  width: 100vh;
-  padding: 5px 20px;
+  width: 25vh;
+  padding: 5px 5px;
    border-right: 2px solid var(--soft-bg);
 }
 .contentContainer{
