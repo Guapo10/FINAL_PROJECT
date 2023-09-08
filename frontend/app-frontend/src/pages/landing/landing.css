@@ -88,6 +88,8 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #111111;
+
 }
 .feature-cards{
   display: flex;
@@ -103,10 +105,13 @@ text-decoration: none;
    width: 100%;
    background: rgb(214, 214, 214);
    border-radius: 10px;
-   padding: 0px;
+   padding: 20px;
    margin-bottom: 20px;
    transition: .3s;
    border-radius: 2px solid transparent;
+       transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+
 
   }
   .feature-card:hover{
@@ -122,12 +127,32 @@ text-decoration: none;
   .feature-card h3 {
     margin-top: 10px;
     color: rgb(0, 0, 0);
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+  }
+  .key-features h2{
+   
+    color:greenyellow;
+    font-size: 1.9rem;
+    padding-right: 50px;
+    text-align: center;
+    margin: 40px;
   }
   
   .feature-card p {
     font-size: 0.9rem;
     color: #180f0f;
   }
+
+
+  .feature-card:hover {
+    background-color: #000000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    color: white;
+  }
   
+.feature-card:hover h3,
+.feature-card:hover p {
+  color: white;
+}
     

@@ -1,12 +1,27 @@
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import EmployeeList from"../../components/employeeList/EmployeeList"
 import './home.css'
 
-const Home = () => {
+function Home () {
+
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/employees') // Replace with your actual API endpoint
+      .then(response => {
+        setEmployees(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+  
   return (
     <div className="home">
-    <div className="box box1">
-      {/* <EmployeeList/> */}
-    </div>
+      <div className="box box1">
+        <EmployeeList employees={employees} /> {}
+      </div>
     <div className="box box2">Box2</div>
     <div className="box box3">Box3</div>
     <div className="box box4">Box4</div>

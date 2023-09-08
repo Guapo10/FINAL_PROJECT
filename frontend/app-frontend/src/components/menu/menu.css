@@ -27,7 +27,7 @@
 
          .listItem :hover{
                 background-color: var(--soft-bg);
-                width: 90%;
+                width: 70%;
                 height: 20px;
             }
             
