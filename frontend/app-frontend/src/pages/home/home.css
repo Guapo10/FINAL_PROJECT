@@ -11,6 +11,7 @@
       padding: 20px;
       border-radius:10px;
       border: 1px solid var(--soft-bg);
+      overflow-y: auto;
     } 
 
 .box1 {

@@ -2,7 +2,7 @@ import './fields.css'
 
 const Fields = () => {
   return (
-    <div className="fields">Fields</div>
+    <div className="fields">Fields Overview</div>
   )
 }
 
